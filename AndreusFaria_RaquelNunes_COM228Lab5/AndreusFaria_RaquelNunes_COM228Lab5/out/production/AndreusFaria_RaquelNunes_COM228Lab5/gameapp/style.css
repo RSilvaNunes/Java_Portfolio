@@ -1,0 +1,42 @@
+#pane{
+    -fx-background-image: url("assets/side_bg.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+
+
+}
+#mainWindow{
+    -fx-background-image: url("assets/bg.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-position: right bottom;
+    -fx-background-size: auto;
+
+}
+
+#buttonBox{
+    -fx-fill-width: 100%;
+    -fx-fill-height: 100%;
+}
+
+#btn1,#btn2,#btn3,#btn4,#btn5{
+    -fx-min-width: 100%;
+}
+
+.btnBorder{
+    -fx-border-color: #ddd;
+    -fx-border-style: solid;
+}
+#v-box{
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    -khtml-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#{
+    -fx-border-style: solid;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="addPlayer" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gameapp.controller.ReportsController">
+   <center>
+      <GridPane prefHeight="439.0" prefWidth="474.0" BorderPane.alignment="TOP_LEFT">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="307.0" minWidth="0.0" prefWidth="0.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="415.0" minWidth="10.0" prefWidth="42.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="415.0" minWidth="0.0" prefWidth="144.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="34.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="400.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="41.0" />
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.0" minHeight="3.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="192.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="192.0" minHeight="7.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="278.0" minHeight="8.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="275.0" minHeight="8.0" prefHeight="22.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="275.0" minHeight="3.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="275.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="228.0" minHeight="9.0" prefHeight="9.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="244.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblTitle" text="Reports" textFill="#dda82c" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="31.0" />
+               </font></Label>
+            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#backToMain" style="-fx-background-color: transparent;" text="Back" textFill="#514e4e" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="13">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Label text="Select Gamer ID:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cmbGamer" prefHeight="25.0" prefWidth="334.0" promptText="Select..." GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <ImageView fx:id="avatar" fitHeight="124.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" GridPane.rowSpan="4" />
+            <Label fx:id="lblName" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Label fx:id="lblLocation" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label fx:id="lblZip" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label fx:id="lblPhone" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <ScrollPane fx:id="container" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="11" />
+            <Label fx:id="lblMatches" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="10" />
+         </children>
+      </GridPane>
+   </center>
+   <left>
+      <Pane id="pane" prefHeight="400.0" prefWidth="161.0" style="-fx-background-color: #dda82c;" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
